@@ -1,0 +1,18 @@
+<p>Detalles del post {{this.idComentarioPost}}</p>
+<div class="container m-5">
+    <div>
+            <div>
+                <div *ngFor="let comentarios of comentariosPost">
+                <ul>
+                    <li *ngFor="let comentario of comentarios">
+                        <h5>{{comentario.name}}</h5>
+                        <p>{{comentario.body}}</p>
+                        <small>
+                            <p class="badge bg-success">{{comentario.email}}</p>
+                        </small>
+                    </li>
+                </ul>
+             </div>
+        </div>
+    </div>
+</div>

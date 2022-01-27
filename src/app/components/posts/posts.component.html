@@ -1,0 +1,8 @@
+<p>POSTS</p>
+<div class="container m-5">
+    <div *ngFor="let post of posts; let i = index">
+            <div>
+                <p>Post nº {{post.id}} : <a routerLink="" routerLinkActive="router-link-active"  (click)="mostrarDetallePost(post.id)">{{post.title}}</a></p>
+            </div>
+    </div>
+</div>
