@@ -1,0 +1,30 @@
+<table style="border: 1px solid black;">
+    <tr>
+        <th><p>ID</p></th>
+        <th><p>Edad</p></th>
+        <th><p>Nombre</p></th>
+        <th><p>Empresa</p></th>
+        <th><p>Email</p></th>
+        <th><p>Fruta favorita</p></th>
+    </tr>
+    <tr *ngFor="let empleado of empleados">
+        <td>
+            <a routerLink="" (click)="mostrarEmpleado(empleado.id)">{{empleado.id}}</a>
+        </td>
+        <td>
+            <p>{{empleado.age}}</p>
+        </td>
+        <td>
+            <p>{{empleado.name.first}} {{empleado.name.last}}</p>
+        </td>
+        <td>
+            <p>{{empleado.company}}</p>
+        </td>
+        <td>
+            <p>{{empleado.email}}</p>
+        </td>
+        <td>
+            <p>{{empleado.favoriteFruit}}</p>
+        </td>
+    </tr>
+</table>
